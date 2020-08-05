@@ -17,7 +17,7 @@
     font-weight: 500;
 }
 
-.year-button-div {
+.year-button-div, .boolean-button-div {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -39,4 +39,67 @@
 
 .year-button-div button:active, .boolean-button-div button:active {
     background-color: #79bb27;
+}
+
+@media only screen and (min-width: 701px) {
+    .Filter-div {
+        width: 25%;
+    }
+    
+    .Filter-div h1{
+        margin: 10px auto 2px;
+        font-size: 1rem;
+    }
+
+    .LaunchYear-div h2, .SuccessfulLanding-div h2, .SuccessfulLanding-div h2{
+        text-decoration: underline;
+        margin: 10px auto 2px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .year-button-div, .boolean-button-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .year-button-div button, .boolean-button-div button {
+        margin: 10px;
+        padding: 10px 15px;
+        width: 33%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .Filter-div {
+        width: 30%;
+    }
+    
+    .Filter-div h1{
+        margin: 10px auto 2px;
+    }
+
+    .LaunchYear-div h2, .SuccessfulLanding-div h2, .SuccessfulLanding-div h2{
+        text-decoration: underline;
+        margin: 10px auto 2px;
+    }
+
+    .year-button-div, .boolean-button-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .year-button-div button, .boolean-button-div button {
+        margin: 10px;
+        padding: 10px 15px;
+        width: 33%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .Filter-div {
+        margin: 0 5% 0 8%;
+    }
 }

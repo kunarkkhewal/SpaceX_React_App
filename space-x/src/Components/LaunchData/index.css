@@ -20,3 +20,46 @@
 .mission-data-div ul li {
     list-style: none;
 }
+
+@media only screen and (min-width: 701px) {
+    .LaunchData-div {
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    .mission-data-div {
+        box-sizing: border-box;
+        margin : 10px 15px;
+        padding : 15px;
+        width: 40%;
+        min-height: 50px;
+        overflow: hidden;
+    }
+
+    .mission-data-div img {
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .LaunchData-div {
+        width: 70%;
+    }
+
+    .mission-data-div {
+        box-sizing: border-box;
+        width: 20%;
+    }
+
+    .mission-data-div img {
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .LaunchData-div {
+        margin: 0 2%;
+    }
+}
