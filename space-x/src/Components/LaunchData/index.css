@@ -16,3 +16,7 @@
 .mission-data-div img {
     background-color: #f2f2f2;
 }
+
+.mission-data-div ul li {
+    list-style: none;
+}

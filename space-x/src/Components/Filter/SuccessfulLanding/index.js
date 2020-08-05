@@ -6,7 +6,7 @@ const SuccessfulLanding = () => {
     return(
         <div className="SuccessfulLanding-div">
             <h2>Successful Landing</h2>
-            {<BooleanButton/>}
+            {<BooleanButton value='land_success'/>}
         </div>
     )
 }
