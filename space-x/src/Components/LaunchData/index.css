@@ -1,0 +1,18 @@
+.LaunchData-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mission-data-div {
+    background-color: white;
+    border-radius: 10px;
+    display : inline-block;
+    box-sizing: border-box;
+    margin : 10px 15px;
+    padding : 15px;
+    width: 100%;
+}
+
+.mission-data-div img {
+    background-color: #f2f2f2;
+}

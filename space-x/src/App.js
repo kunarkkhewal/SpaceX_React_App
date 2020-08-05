@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Filter from './Components/Filter';
+import LaunchData from './Components/LaunchData';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          SpaceX Launch Programs
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <main className="App-main">
+        {<Filter/>}
+        {<LaunchData/>}
+      </main>
+
+
+      <footer className="App-footer">
+        Developed By: Kunark Khewal
+      </footer>
     </div>
   );
 }
