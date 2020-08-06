@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin : 10px 15px;
     padding : 15px;
+    max-height: 720px;
 }
 
 .Filter-div h1{
