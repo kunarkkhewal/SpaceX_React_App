@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BooleanButton should render BooleanButton component correctly 1`] = `
+<BooleanButton>
+  <div
+    className="boolean-button-div"
+  >
+    <button
+      onClick={[Function]}
+      value="true"
+    >
+      TRUE
+    </button>
+    <button
+      onClick={[Function]}
+      value="false"
+    >
+      FALSE
+    </button>
+  </div>
+</BooleanButton>
+`;

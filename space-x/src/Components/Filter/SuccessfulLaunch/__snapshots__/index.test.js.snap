@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessfulLaunch should render SuccessfulLaunch component correctly 1`] = `
+<SuccessfulLaunch>
+  <div
+    className="SuccessfulLanding-div"
+  >
+    <h2>
+      Successful Launch
+    </h2>
+    <BooleanButton
+      value="launch_success"
+    >
+      <div
+        className="boolean-button-div"
+      >
+        <button
+          onClick={[Function]}
+          value="true"
+        >
+          TRUE
+        </button>
+        <button
+          onClick={[Function]}
+          value="false"
+        >
+          FALSE
+        </button>
+      </div>
+    </BooleanButton>
+  </div>
+</SuccessfulLaunch>
+`;

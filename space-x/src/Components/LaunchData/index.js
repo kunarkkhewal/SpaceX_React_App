@@ -1,15 +1,15 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useEffect, useContext} from 'react';
 import axios from 'axios';
 import {DataContext} from '../../App';
 import './index.css'
 
 const LaunchData = () => {
-    const dataContext = useContext(DataContext);
+    const { missionData, setMissionData } = useContext(DataContext);
 
     const getLaunchData = async () => {
         await axios.get(`https://api.spaceXdata.com/v3/launches?limit=100`)
             .then(data => {
-                dataContext.setMissionData(data.data)
+                setMissionData(data.data)
             })
             .catch(error => {
                 console.log(" -------- NO DATA FOUND!!! => error => ", error)
@@ -22,16 +22,16 @@ const LaunchData = () => {
 
     return(
         <div className='LaunchData-div'>
-            {dataContext.missionData.map((launch, key) => {
+            {missionData && missionData.map((launch, key) => {
                 const {
                     mission_name, 
                     launch_year, 
                     mission_id, 
                     launch_success, 
-                    links:{mission_patch, mission_patch_small},
+                    links:{mission_patch_small},
                     rocket: {first_stage: {cores}}
                 } = launch
-                const land_success = cores.length == 1 ? cores[0].land_success : cores[cores.length-1].land_success
+                const land_success = cores.length === 1 ? cores[0].land_success : cores[cores.length-1].land_success
 
                 return <div className='mission-data-div'>
                         <img src={mission_patch_small} alt="user"/>

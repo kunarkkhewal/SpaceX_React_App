@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchData should render LaunchData component correctly 1`] = `
+<LaunchData>
+  <div
+    className="LaunchData-div"
+  >
+    <div
+      className="mission-data-div"
+    >
+      <img
+        alt="user"
+        src="mock-img"
+      />
+      <h3>
+        mock-name
+      </h3>
+      <p>
+        <b>
+          Mission Ids:
+        </b>
+      </p>
+      <ul />
+      <p>
+        <b>
+          Launch Year:
+        </b>
+         
+        2006
+      </p>
+      <p>
+        <b>
+          Successful Launch:
+        </b>
+         
+        <span>
+          false
+        </span>
+      </p>
+      <p>
+        <b>
+          Successful Landing:
+        </b>
+         
+        <span>
+          false
+        </span>
+      </p>
+    </div>
+  </div>
+</LaunchData>
+`;
